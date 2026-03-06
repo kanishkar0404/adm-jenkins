@@ -3,17 +3,17 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building Node.js app'
-            }
-        }
-        stage('Run App') {
-            steps {
-                bat 'node app.js'
+                echo 'Building...'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing complete'
+                echo 'Running tests...'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying...'
             }
         }
     }
